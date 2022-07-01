@@ -56,4 +56,23 @@ article#banner_apresentacao {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    height: 90vh;
+}
+
+div#banner_apresentacao-descricao {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+h2#banner_apresentacao-titulo {
+    font-size: 6rem;
+    color: var(--cor-texto-amarelo);
+    text-transform: uppercase;
+}
+
+h3#banner_apresentacao-subtitulo {
+    font-size: 4rem;
 }
