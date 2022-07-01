@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+:root {
+    --fonte-padrao: "Heebo", sans-serif;
+    --cor-texto-azul: #1e3d9f;
+    --cor-texto-amarelo: #e6ae00;
+}
+
+body {
+    background-color: #222222;
+    font-family: var(--fonte-padrao);
+}
+
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cabecalho__titulo {
+    font-size: 4.5rem;
+    color: var(--cor-texto-amarelo);
+}
+
+#menu__lista {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+#menu__lista li {
+    margin-left: 1.5rem;
+}
+
+#menu__lista li a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor-texto-azul);
+    font-weight: 900;
+}
+
+#menu__lista li a:hover {
+    border-bottom: 3px solid var(--cor-texto-amarelo);
+}
+
+main {
+    margin: 10px 0;
+}
+
+section#banner,
+section#apresentacao {
+    padding: 10px;
+    height: 100vh;
+}
+
+article#banner_apresentacao {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#banner_apresentacao-descricao {
+    width: 24vw;
+}
+
+#banner_apresentacao-titulo {
+    font-size: 6.5rem;
+    color: var(--cor-texto-amarelo);
+    text-transform: uppercase;
+}
+
+#banner_apresentacao-subtitulo {
+    font-size: 3.5rem;
+}
+
+#banner_apresentacao-foto {
+    width: 100%;
+}
+section#apresentacao {
+    background-color: #ffffff;
+}
+article#apresentacao_card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+section#apresentacao h3,
+h5,
+p {
+    color: #222222;
+    font-weight: 700;
+}
+img#apresentacao_card-foto {
+    width: 40vw;
+}
+div#apresentacao_card-conteudo {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+h2#apresentacao_card-titulo {
+    color: var(--cor-texto-azul);
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+p#apresentacao_card-descricao {
+    font-size: 3rem;
+    color: #222222;
+    font-weight: 700;
+}
+div#apresentacao_card-contato {
+    display: flex;
+}
