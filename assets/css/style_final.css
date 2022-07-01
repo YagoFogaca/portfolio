@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+:root {
+    --fonte-padrao: "Heebo", sans-serif;
+    --cor-texto-azul: #1e3d9f;
+    --cor-texto-amarelo: #e6ae00;
+}
+
+body {
+    background-color: #222222;
+    font-family: var(--fonte-padrao);
+}
+
+header#cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1#cabecalho__titulo {
+    font-size: 4.5rem;
+    color: var(--cor-texto-amarelo);
+}
+
+ul#menu__lista {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+ul#menu__lista li {
+    margin-left: 1.5rem;
+}
+
+ul#menu__lista li a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cor-texto-azul);
+    font-weight: 900;
+}
+
+ul#menu__lista li a:hover {
+    border-bottom: 3px solid var(--cor-texto-amarelo);
+}
+
+article#banner_apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

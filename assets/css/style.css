@@ -82,7 +82,7 @@ article#banner_apresentacao {
 }
 
 #banner_apresentacao-foto {
-    width: 100%;
+    width: 18vw;
 }
 section#apresentacao {
     display: flex;
@@ -115,7 +115,7 @@ div#apresentacao_card-conteudo {
 }
 
 h2#apresentacao_card-titulo {
-    color: var(--cor-texto-azul);
+    color: var(--cor-texto-amarelo);
     font-size: 5.5rem;
     font-weight: 900;
 }
