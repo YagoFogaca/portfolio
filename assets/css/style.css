@@ -52,6 +52,12 @@ ul#menu__lista li a:hover {
     border-bottom: 3px solid var(--cor-texto-amarelo);
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
 article#banner_apresentacao {
     display: flex;
     align-items: center;
@@ -75,4 +81,77 @@ h2#banner_apresentacao-titulo {
 
 h3#banner_apresentacao-subtitulo {
     font-size: 4rem;
+}
+
+img#banner_apresentacao-img {
+    width: 25vw;
+}
+
+article#apresentacao_sobre {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img#apresentacao_sobre-img {
+    width: 25vw;
+    box-shadow: 0px 10px 17px 0px #000000;
+}
+
+div#apresentacao_sobre-texto {
+    width: 30%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2#apresentacao_sobre-titulo {
+    font-size: 4rem;
+    color: var(--cor-texto-amarelo);
+}
+
+p#apresentacao_sobre-paragrafo {
+    font-size: 2.5rem;
+}
+
+article#servicos_apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 5rem;
+}
+
+h2#servicos_cards-titulo {
+    font-size: 4rem;
+    color: var(--cor-texto-amarelo);
+}
+
+div#servicos_apresentacao_cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+div.card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 300px;
+    padding: 1.5rem;
+    box-shadow: 0px 10px 5px 0px #000000;
+}
+i.bi,
+i.bi-code-slash,
+i.bi-laptop,
+i.bi-columns-gap {
+    font-size: 5rem;
+}
+h2#card-1-texto {
+    font-size: 2rem;
 }
