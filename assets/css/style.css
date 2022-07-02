@@ -87,6 +87,10 @@ img#banner_apresentacao-img {
     width: 25vw;
 }
 
+section#apresentacao {
+    background-color: #323232;
+}
+
 article#apresentacao_sobre {
     display: flex;
     justify-content: space-evenly;
