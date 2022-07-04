@@ -144,7 +144,6 @@ h2.apresentacao_cards-titulo {
 }
 
 div.apresentacao_card {
-    /*aqui*/
     width: 100%;
     display: flex;
     flex-direction: row;
