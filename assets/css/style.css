@@ -192,7 +192,7 @@ img.cards_img {
 }
 
 section#projetos {
-    padding: 2rem;
+    padding: 2rem 2rem 5rem 2rem;
     background-color: var(--bg-preto-2);
 }
 
@@ -255,7 +255,6 @@ article#contato_apresentacao {
 h2#contato_apresentacao-titulo {
     font-size: 4rem;
     color: var(--cor-texto-amarelo);
-    margin-top: 4rem;
     text-transform: uppercase;
 }
 
@@ -273,6 +272,7 @@ div.contato_apresentacao-cards {
     align-items: center;
     width: 150px;
     padding: 1.5rem;
+    border-radius: 10px;
     box-shadow: 0px 10px 5px 0px #000000;
     border-top: 5px solid var(--cor-texto-azul);
     transition: all 60ms;
