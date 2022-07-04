@@ -248,6 +248,11 @@ p.projetos_cards-descricao {
 a#projetos_cards--descricao-link {
     font-size: 1.8rem;
     text-align: justify;
+    text-decoration: none;
+}
+
+a#projetos_cards--descricao-link:hover {
+    text-decoration: underline;
 }
 
 article#contato_apresentacao {
@@ -306,4 +311,8 @@ a#rodape_texto-link {
     font-size: 2rem;
     text-decoration: none;
     color: var(--cor-texto-azul);
+}
+
+a#rodape_texto-link:hover {
+    text-decoration: underline;
 }
