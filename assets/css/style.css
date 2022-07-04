@@ -11,6 +11,7 @@
     --fonte-padrao: "Heebo", sans-serif;
     --cor-texto-azul: #1e3d9f;
     --cor-texto-amarelo: #e6ae00;
+    --bg-preto-2: #323232;
 }
 
 body {
@@ -23,7 +24,7 @@ header#cabecalho {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #323232;
+    background-color: var(--bg-preto-2);
     padding: 1.5rem;
 }
 
@@ -90,7 +91,7 @@ img#banner_apresentacao-img {
 }
 
 section#apresentacao {
-    background-color: #323232;
+    background-color: var(--bg-preto-2);
 }
 
 article#apresentacao_sobre {
@@ -182,8 +183,8 @@ h2.cards-texto {
 }
 
 section#skills {
-    padding: 20px;
-    background-color: #323232;
+    padding: 2rem;
+    background-color: var(--bg-preto-2);
 }
 
 img.cards_img {
@@ -191,8 +192,8 @@ img.cards_img {
 }
 
 section#projetos {
-    padding: 20px;
-    background-color: #323232;
+    padding: 2rem;
+    background-color: var(--bg-preto-2);
 }
 
 article#apresentacao_projetos {
@@ -287,7 +288,7 @@ img.contato_cards-img {
 
 footer#rodape {
     margin-top: 5rem;
-    background-color: #323232;
+    background-color: var(--bg-preto-2);
     padding: 2.5rem;
 }
 p#rodape_texto {
