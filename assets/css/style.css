@@ -56,6 +56,9 @@ ul#menu__lista li a:hover {
 }
 
 article#banner_apresentacao {
+    background-image: url(/assets/img/banner.png);
+    background-position: 30% 45%;
+    background-size: cover;
     height: 90vh;
     display: flex;
     flex-direction: column;
