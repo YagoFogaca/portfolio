@@ -23,6 +23,8 @@ header#cabecalho {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: #323232;
+    padding: 1.5rem;
 }
 
 h1#cabecalho__titulo {
@@ -161,7 +163,13 @@ div.cards {
     padding: 1.5rem;
     box-shadow: 0px 10px 5px 0px #000000;
     border-top: 5px solid var(--cor-texto-azul);
+    transition: all 60ms;
 }
+
+div.cards:hover {
+    transform: scale(1.1);
+}
+
 i.bi,
 i.bi-code-slash,
 i.bi-laptop,
@@ -224,11 +232,6 @@ div.projetos_cards {
     border-top: 5px solid var(--cor-texto-azul);
 }
 
-h2.projetos_cards-titulo {
-    font-size: 4rem;
-    color: var(--cor-texto-amarelo);
-}
-
 iframe.projetos_cards-video {
     width: 100%;
     min-width: 200px;
@@ -239,4 +242,63 @@ p.projetos_cards-descricao {
     font-size: 1.8rem;
     text-align: justify;
     line-height: 1.5;
+}
+
+article#contato_apresentacao {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+h2#contato_apresentacao-titulo {
+    font-size: 4rem;
+    color: var(--cor-texto-amarelo);
+    margin-top: 4rem;
+    text-transform: uppercase;
+}
+
+div#cards {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.contato_apresentacao-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    padding: 1.5rem;
+    box-shadow: 0px 10px 5px 0px #000000;
+    border-top: 5px solid var(--cor-texto-azul);
+    transition: all 60ms;
+}
+
+div.contato_apresentacao-cards:hover {
+    transform: scale(1.1);
+}
+
+img.contato_cards-img {
+    width: 5vw;
+}
+
+footer#rodape {
+    margin-top: 5rem;
+    background-color: #323232;
+    padding: 2.5rem;
+}
+p#rodape_texto {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--cor-texto-amarelo);
+}
+a#rodape_texto-link {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--cor-texto-amarelo);
+    text-shadow: 0.1em 0.1em 0.2em var(--cor-texto-azul);
 }
