@@ -231,7 +231,7 @@ div.projetos-cards {
 div.projetos_cards {
     width: 60%;
     max-width: 460px;
-    min-width: 200px;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,7 +259,7 @@ p.projetos_cards-descricao {
 }
 a#projetos_cards--descricao-link {
     font-size: 1.8rem;
-    text-align: justify;
+    text-align: center;
     text-decoration: none;
 }
 
@@ -360,5 +360,26 @@ a#rodape_texto-link:hover {
     }
     div#cards {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    header#cabecalho {
+        justify-content: center;
+        padding: 2.5rem;
+        gap: 6.5rem;
+    }
+    h1#cabecalho__titulo {
+        font-size: 3.5rem;
+        color: var(--cor-texto-amarelo);
+    }
+    div#menu_mobile {
+        gap: 1rem;
+    }
+    h2#banner_apresentacao-titulo {
+        font-size: 4rem;
+    }
+    h3#banner_apresentacao-subtitulo {
+        font-size: 3rem;
     }
 }
