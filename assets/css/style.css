@@ -191,6 +191,7 @@ i.bi-columns-gap {
 h2.cards-texto {
     font-size: 2rem;
     font-weight: 400;
+    text-align: center;
 }
 
 section#skills {
@@ -226,7 +227,6 @@ div.projetos-cards {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     gap: 4rem 5rem;
 }
 
