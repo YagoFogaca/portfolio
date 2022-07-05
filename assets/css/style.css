@@ -38,8 +38,8 @@ div#menu_mobile {
 }
 
 div.menu_linhas {
-    width: 65px;
-    height: 3px;
+    width: 55px;
+    height: 2px;
     background-color: var(--cor-texto-amarelo);
 }
 
@@ -147,6 +147,7 @@ article.apresentacao_cards {
     flex-direction: column;
     align-items: center;
     gap: 3.5rem;
+    padding: 1rem;
 }
 
 h2.apresentacao_cards-titulo {
@@ -233,7 +234,7 @@ div.projetos-cards {
 div.projetos_cards {
     width: 60%;
     max-width: 460px;
-    min-width: 250px;
+    min-width: 225px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -319,6 +320,8 @@ div.contato_apresentacao-cards:hover {
 
 img.contato_cards-img {
     width: 5vw;
+    max-width: 72px;
+    min-width: 40px;
 }
 
 footer#rodape {
@@ -344,23 +347,32 @@ a#rodape_texto-link:hover {
         justify-content: space-around;
         padding: 2.5rem;
     }
+
+    h1#cabecalho__titulo {
+        font-size: 3rem;
+        color: var(--cor-texto-amarelo);
+    }
+
     ul#menu__lista {
         display: none;
     }
+
     div#menu_mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
+        gap: 1rem;
         height: 100px;
     }
+
     article#apresentacao_sobre {
         display: flex;
         align-items: center;
         flex-direction: column;
         gap: 5rem;
     }
+
     div#cards {
         flex-direction: column;
     }
@@ -372,16 +384,16 @@ a#rodape_texto-link:hover {
         padding: 0rem;
         gap: 6.5rem;
     }
+
     h1#cabecalho__titulo {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         color: var(--cor-texto-amarelo);
     }
-    div#menu_mobile {
-        gap: 1rem;
-    }
+
     h2#banner_apresentacao-titulo {
         font-size: 4rem;
     }
+
     h3#banner_apresentacao-subtitulo {
         font-size: 3rem;
     }
