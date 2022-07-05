@@ -21,11 +21,11 @@ body {
 
 header#cabecalho {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--bg-preto-2);
     padding: 1.5rem;
+    gap: 2rem;
 }
 
 h1#cabecalho__titulo {
@@ -33,9 +33,19 @@ h1#cabecalho__titulo {
     color: var(--cor-texto-amarelo);
 }
 
+div#menu_mobile {
+    display: none;
+}
+
+div.menu_linhas {
+    width: 65px;
+    height: 3px;
+    background-color: var(--cor-texto-amarelo);
+}
+
 ul#menu__lista {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     gap: 35px;
 }
 
@@ -49,6 +59,7 @@ ul#menu__lista li a {
     text-transform: uppercase;
     color: var(--cor-texto-azul);
     font-weight: 900;
+    transition: all 50ms linear;
 }
 
 ul#menu__lista li a:hover {
@@ -59,7 +70,7 @@ article#banner_apresentacao {
     background: url(https://github.com/YagoFogaca/portfolio/blob/main/assets/img/banner.png?raw=true);
     background-position: 30% 45%;
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,10 +78,10 @@ article#banner_apresentacao {
 }
 
 div#banner_apresentacao-descricao {
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
 }
 
@@ -78,10 +89,12 @@ h2#banner_apresentacao-titulo {
     font-size: 6rem;
     color: var(--cor-texto-amarelo);
     text-transform: uppercase;
+    text-align: center;
 }
 
 h3#banner_apresentacao-subtitulo {
     font-size: 4rem;
+    text-align: center;
 }
 
 section#apresentacao {
@@ -94,6 +107,7 @@ article#apresentacao_sobre {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    gap: 3rem;
 }
 
 img#apresentacao_sobre-img {
@@ -179,18 +193,17 @@ h2.cards-texto {
     font-weight: 400;
 }
 
-section#skills,
-section#projetos {
+section#skills {
     padding: 7rem 0;
     background-color: var(--bg-preto-2);
 }
 
-section#hards {
-    padding: 7rem 0;
-}
-
 img.cards_img {
     width: 10vw;
+}
+
+section#projetos {
+    padding: 7rem 0;
 }
 
 article#apresentacao_projetos {
@@ -226,6 +239,7 @@ div.projetos_cards {
     padding: 1.5rem;
     box-shadow: 0px 10px 5px 0px #000000;
     border-top: 5px solid var(--cor-texto-azul);
+    border-radius: 5px;
 }
 
 h2.projetos_cards-titulo {
@@ -255,6 +269,7 @@ a#projetos_cards--descricao-link:hover {
 
 section#contato {
     padding: 7rem 0;
+    background-color: var(--bg-preto-2);
 }
 
 article#contato_apresentacao {
@@ -277,6 +292,7 @@ div#cards {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    gap: 3rem;
 }
 
 div.contato_apresentacao-cards {
@@ -285,14 +301,17 @@ div.contato_apresentacao-cards {
     align-items: center;
     width: 150px;
     padding: 1.5rem;
-    border-radius: 10px;
     box-shadow: 0px 10px 5px 0px #000000;
     border-top: 5px solid var(--cor-texto-azul);
     transition: all 60ms;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 div.contato_apresentacao-cards:hover {
     transform: scale(1.1);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 img.contato_cards-img {
@@ -301,7 +320,6 @@ img.contato_cards-img {
 
 footer#rodape {
     padding: 4rem 0;
-    background-color: var(--bg-preto-2);
 }
 p#rodape_texto {
     font-size: 2rem;
@@ -316,4 +334,31 @@ a#rodape_texto-link {
 
 a#rodape_texto-link:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header#cabecalho {
+        justify-content: space-around;
+        padding: 2.5rem;
+    }
+    ul#menu__lista {
+        display: none;
+    }
+    div#menu_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        height: 100px;
+    }
+    article#apresentacao_sobre {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    div#cards {
+        flex-direction: column;
+    }
 }
