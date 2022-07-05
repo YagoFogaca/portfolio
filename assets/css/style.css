@@ -67,7 +67,8 @@ ul#menu__lista li a:hover {
 }
 
 article#banner_apresentacao {
-    background: url(https://github.com/YagoFogaca/portfolio/blob/main/assets/img/banner.png?raw=true);
+    /* background: url(https://github.com/YagoFogaca/portfolio/blob/main/assets/img/banner.png?raw=true); */
+    background-image: url(../img/banner.png);
     background-position: 30% 45%;
     background-size: cover;
     height: 100vh;
@@ -200,6 +201,8 @@ section#skills {
 
 img.cards_img {
     width: 10vw;
+    max-width: 138px;
+    min-width: 118px;
 }
 
 section#projetos {
