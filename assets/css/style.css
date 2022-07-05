@@ -67,7 +67,6 @@ ul#menu__lista li a:hover {
 }
 
 article#banner_apresentacao {
-    /* background: url(https://github.com/YagoFogaca/portfolio/blob/main/assets/img/banner.png?raw=true); */
     background-image: url(../img/banner.png);
     background-position: 30% 45%;
     background-size: cover;
