@@ -227,7 +227,7 @@ div.projetos-cards {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 4rem 4rem;
+    gap: 4rem 5rem;
 }
 
 div.projetos_cards {
@@ -247,6 +247,7 @@ div.projetos_cards {
 h2.projetos_cards-titulo {
     font-size: 3rem;
     color: var(--cor-texto-amarelo);
+    text-align: center;
 }
 
 iframe.projetos_cards-video {
@@ -368,7 +369,7 @@ a#rodape_texto-link:hover {
 @media (max-width: 425px) {
     header#cabecalho {
         justify-content: center;
-        padding: 2.5rem;
+        padding: 0rem;
         gap: 6.5rem;
     }
     h1#cabecalho__titulo {
