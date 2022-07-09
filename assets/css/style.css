@@ -71,6 +71,7 @@ article#banner_apresentacao {
     background-position: 30% 45%;
     background-size: cover;
     height: 100vh;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,11 +79,12 @@ article#banner_apresentacao {
 }
 
 div#banner_apresentacao-descricao {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    backdrop-filter: blur(13.5px);
+    border-radius: 10px;
 }
 
 h2#banner_apresentacao-titulo {
@@ -230,7 +232,7 @@ div.projetos-cards {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 4rem 5rem;
+    gap: 5rem 5rem;
 }
 
 div.projetos_cards {
