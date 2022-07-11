@@ -30,7 +30,7 @@ div#menu {
     gap: 2rem;
 }
 
-h1#cabecalho__titulo {
+h1.cabecalho__titulo {
     font-size: 4.5rem;
     color: var(--cor-texto-amarelo);
 }
@@ -41,9 +41,13 @@ div#menu-mobile-cabecalho {
     gap: 6rem;
 }
 
-div#menu-mobile,
-div#menu_mobile-sair {
+div#menu-mobile {
     display: none;
+}
+i.bi-x {
+    display: none;
+    font-size: 5rem;
+    color: var(--cor-texto-amarelo);
 }
 
 div.menu_linhas-menu {
@@ -56,19 +60,6 @@ div.menu_linhas-menu {
 
 div.menu_linhas {
     width: 45px;
-    height: 2px;
-    background-color: var(--cor-texto-amarelo);
-}
-
-.linha1 {
-    transform: rotate(226deg);
-    width: 35px;
-    height: 2px;
-    background-color: var(--cor-texto-amarelo);
-}
-.linha2 {
-    transform: rotate(311deg);
-    width: 35px;
     height: 2px;
     background-color: var(--cor-texto-amarelo);
 }
@@ -227,7 +218,6 @@ div.cards:hover {
     border-radius: 10px;
 }
 
-i.bi,
 i.bi-code-slash,
 i.bi-laptop,
 i.bi-columns-gap {
@@ -393,7 +383,7 @@ a#rodape_texto-link:hover {
         display: none;
     }
 
-    h1#cabecalho__titulo {
+    h1.cabecalho__titulo {
         font-size: 3rem;
         color: var(--cor-texto-amarelo);
     }
@@ -439,7 +429,7 @@ a#rodape_texto-link:hover {
         display: none;
     }
 
-    h1#cabecalho__titulo {
+    h1.cabecalho__titulo {
         font-size: 2.8rem;
         color: var(--cor-texto-amarelo);
     }

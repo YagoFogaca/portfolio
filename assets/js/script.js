@@ -6,7 +6,9 @@ const menuLista = document.querySelector("#menu-lista");
 
 const lista = document.querySelector("#menu__lista");
 
-const sairMenu = document.querySelector("#menu_mobile-sair");
+const sairMenu = document.querySelector(".bi-x");
+
+const titulo = document.querySelector(".mobile");
 
 const body = document.querySelector("body");
 
@@ -23,5 +25,17 @@ menuMobile.addEventListener("click", function () {
 
     sairMenu.style.display = "block";
 
-    body.style.overflow = "hidden";
+    titulo.style.fontSize = "3.8rem";
+});
+
+sairMenu.addEventListener("click", function () {
+    sairMenu.style.display = "none";
+
+    menuMobile.style.display = "flex";
+
+    menuLista.style.display = "none";
+
+    espacoMenu.style.height = "auto";
+
+    espacoMenu.style.flexDirection = "row";
 });
