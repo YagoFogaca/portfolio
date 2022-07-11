@@ -4,13 +4,7 @@ const espacoMenu = document.querySelector("#menu-mobile");
 
 const menuLista = document.querySelector("#menu-lista");
 
-const lista = document.querySelector("#menu__lista");
-
 const sairMenu = document.querySelector(".bi-x");
-
-const titulo = document.querySelector(".mobile");
-
-const body = document.querySelector("body");
 
 menuMobile.addEventListener("click", function () {
     espacoMenu.style.height = "100vh";
