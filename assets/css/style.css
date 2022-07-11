@@ -35,12 +35,40 @@ h1#cabecalho__titulo {
     color: var(--cor-texto-amarelo);
 }
 
-div#menu-mobile {
+div#menu-mobile-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+div#menu-mobile,
+div#menu_mobile-sair {
     display: none;
+}
+
+div.menu_linhas-menu {
+    width: 45px;
+    height: 2px;
+    background-color: var(--cor-texto-amarelo);
+    position: absolute;
+    top: 50px;
 }
 
 div.menu_linhas {
     width: 45px;
+    height: 2px;
+    background-color: var(--cor-texto-amarelo);
+}
+
+.linha1 {
+    transform: rotate(226deg);
+    width: 35px;
+    height: 2px;
+    background-color: var(--cor-texto-amarelo);
+}
+.linha2 {
+    transform: rotate(311deg);
+    width: 35px;
     height: 2px;
     background-color: var(--cor-texto-amarelo);
 }

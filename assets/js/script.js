@@ -8,6 +8,8 @@ const lista = document.querySelector("#menu__lista");
 
 const sairMenu = document.querySelector("#menu_mobile-sair");
 
+const body = document.querySelector("body");
+
 menuMobile.addEventListener("click", function () {
     espacoMenu.style.height = "100vh";
 
@@ -18,4 +20,8 @@ menuMobile.addEventListener("click", function () {
     menuMobile.style.display = "none";
 
     menuLista.style.display = "flex";
+
+    sairMenu.style.display = "block";
+
+    body.style.overflow = "hidden";
 });
