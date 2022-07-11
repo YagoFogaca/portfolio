@@ -11,9 +11,11 @@ const sairMenu = document.querySelector("#menu_mobile-sair");
 menuMobile.addEventListener("click", function () {
     espacoMenu.style.height = "100vh";
 
+    espacoMenu.style.flexDirection = "column";
+
+    espacoMenu.style.justifyContent = "space-evenly";
+
     menuMobile.style.display = "none";
 
     menuLista.style.display = "flex";
-
-    espacoMenu.style.flexDirection = "column";
 });
