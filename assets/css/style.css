@@ -286,10 +286,12 @@ h2.projetos_cards-titulo {
     text-align: center;
 }
 
-iframe.projetos_cards-video {
+iframe.projetos_cards-video,
+img#projeto_login {
     width: 100%;
     min-width: 200px;
     height: 315px;
+    object-fit: cover;
 }
 
 p.projetos_cards-descricao {
