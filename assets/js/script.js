@@ -24,8 +24,6 @@ menuMobile.addEventListener("click", function () {
     menuLista.style.display = "flex";
 
     sairMenu.style.display = "block";
-
-    titulo.style.fontSize = "3.8rem";
 });
 
 sairMenu.addEventListener("click", function () {
